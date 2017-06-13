@@ -50,8 +50,9 @@ void setup(){
         started=true;   
         blink(4,'b');
     } 
-    else 
+    else{ 
         Serial.println("\nstatus=IDLE");
+    }
     //cleaning the memory of the shield so that it has room to show new sms messages
     sms_position=sms.IsSMSPresent(SMS_READ);
     sms.DeleteSMS(sms_position);
